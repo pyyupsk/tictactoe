@@ -1,9 +1,11 @@
 import "@/assets/css/style.css";
 import App from "@/app.vue";
 import { router } from "@/router";
+import { createPinia } from "pinia";
 import { createApp } from "vue";
 
 const app = createApp(App);
+const pinia = createPinia();
 
 app.config.performance = import.meta.env.DEV;
 
@@ -31,5 +33,6 @@ app.config.errorHandler = (err, instance, info) => {
   }
 };
 
+app.use(pinia);
 app.use(router);
 app.mount("#app");
