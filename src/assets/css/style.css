@@ -3,6 +3,7 @@
 
 /* Custom */
 @import "./animation.css";
+@import "./fonts.css";
 @import "./tictactoe.css";
 @import "./variables.css";
 
@@ -13,6 +14,6 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground min-h-screen font-sans antialiased;
+    @apply bg-background text-foreground min-h-screen font-mono antialiased;
   }
 }
